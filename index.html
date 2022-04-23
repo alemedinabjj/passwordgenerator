@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    
+        <div class="container">
+            <img src="./img/logo.png" alt="">
+            <span>Tamanho <span id="valor" class="valor"></span > caracteres</span>
+            <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+
+            <button id="button" onclick="generatePassword()" class="button-cta">Gerar Senha</button>
+            <div id="container-password" onclick="copyPassword()"class="container-password hide">
+                <span class="title">Sua senha gerada foi: </span>
+                <span id="password" onclick="copy()" class="password">Clique em Gerar Senha</span>
+                <span class="tooltip" id="copiado" >Clique na senha para copiar.</span>
+                
+            </div>
+            <span  class="copy"></span>
+        </div>
+       
+   
+</body>
+</html>
